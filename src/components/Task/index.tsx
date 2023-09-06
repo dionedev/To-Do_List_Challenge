@@ -1,13 +1,15 @@
-import { useState } from "react";
 import { TbTrash } from "react-icons/tb"
 import { Container } from "./styles";
+import { useState } from "react";
 
 interface TaskProps {
-  description: string
+  description : string,
+  onDelete: () => void
 }
 
-export function Task({ description }: TaskProps) {
-const [isChecked, setIsChecked] = useState(false)
+export function Task({ description, onDelete }: TaskProps) {
+
+  const [isChecked, setIsChecked] = useState(false)
 
   return (
     <Container checked={isChecked}>
@@ -23,7 +25,7 @@ const [isChecked, setIsChecked] = useState(false)
         </p>
       </div>
 
-      <button>
+      <button onClick={onDelete}>
         <TbTrash size={18} />
       </button>
     </Container>
