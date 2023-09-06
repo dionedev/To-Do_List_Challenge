@@ -12,6 +12,7 @@ export const Container = styled.div<ContainerProps>`
   justify-content: space-between;
   align-items: start;
   gap: 1.2rem;
+  margin-bottom: 1.2rem;
 
   border: 1px solid ${({ theme }) => theme.gray_400};
   border-radius: 8px;

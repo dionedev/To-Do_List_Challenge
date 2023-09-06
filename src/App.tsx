@@ -57,14 +57,13 @@ export function App() {
 
         <TaskSection>
           <div className="task-counter">
-
-            <section className="task-counter-created">
+            <div className="task-counter-created">
               <strong>Tarefas criadas <span>5</span></strong>
-            </section>
+            </div>
 
-            <section className="task-counter-completed">
+            <div className="task-counter-completed">
               <strong>Concluídas <span>2 de 5</span></strong>
-            </section>
+            </div>
           </div>
 
           {

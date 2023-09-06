@@ -24,22 +24,36 @@ export const TaskSection = styled.section`
 
   .task-counter-created {
     strong {
+      display: flex;
+      gap: 8px;
       color: ${({ theme }) => theme.blue};
 
       span {
-        background-color: aqua;
-        color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px 8px;
+        border-radius: 999px;
+        background-color: ${({ theme }) => theme.gray_400};
+        color: ${({ theme }) => theme.gray_200};
       }
     }
   }
 
   .task-counter-completed {
     strong {
+      display: flex;
+      gap: 8px;
       color: ${({ theme }) => theme.purple};
 
       span {
-        background-color: gray;
-        color: green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px 8px;
+        border-radius: 999px;
+        background-color: ${({ theme }) => theme.gray_400};
+        color: ${({ theme }) => theme.gray_200};
       }
     }
   }
